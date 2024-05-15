@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+
+          /*
+           background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment:fixed; 
+            */
+
+            /* shorthan - background
+                color > image > position > repeat > [size, o size em breve pode sr aceito nos navegadores, mas não funciona por enquanto, portanto, desconsiderar] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -26,6 +37,9 @@
 <body>
     <main>
         <h1>Teste de imagem</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, aut. Non hic magni perferendis nisi accusamus. Harum neque et, cumque doloribus, nemo accusantium quibusdam iusto nam, expedita incidunt deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus ut incidunt magni beatae dolor qui cum aliquid illum. Earum velit consequatur doloremque delectus dignissimos nemo, quod temporibus repellat corrupti.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, aut. Non hic magni perferendis nisi accusamus. Harum neque et, cumque doloribus, nemo accusantium quibusdam iusto nam, expedita incidunt deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus ut incidunt magni beatae dolor qui cum aliquid illum. Earum velit consequatur doloremque delectus dignissimos nemo, quod temporibus repellat corrupti.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, aut. Non hic magni perferendis nisi accusamus. Harum neque et, cumque doloribus, nemo accusantium quibusdam iusto nam, expedita incidunt deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus ut incidunt magni beatae dolor qui cum aliquid illum. Earum velit consequatur doloremque delectus dignissimos nemo, quod temporibus repellat corrupti.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, aut. Non hic magni perferendis nisi accusamus. Harum neque et, cumque doloribus, nemo accusantium quibusdam iusto nam, expedita incidunt deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus ut incidunt magni beatae dolor qui cum aliquid illum. Earum velit consequatur doloremque delectus dignissimos nemo, quod temporibus repellat corrupti.</p>
     </main>
 </body>
